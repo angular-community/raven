@@ -1,0 +1,48 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "raven": {
+      "root": "projects/raven",
+      "sourceRoot": "projects/raven/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/raven/tsconfig.lib.json",
+            "project": "projects/raven/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/raven/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/raven/src/test.ts",
+            "tsConfig": "projects/raven/tsconfig.spec.json",
+            "karmaConfig": "projects/raven/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/raven/tsconfig.lib.json",
+              "projects/raven/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "raven"
+}
