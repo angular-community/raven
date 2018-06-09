@@ -32,13 +32,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/raven/tsconfig.lib.json",
-              "projects/raven/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["projects/raven/tsconfig.lib.json", "projects/raven/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
