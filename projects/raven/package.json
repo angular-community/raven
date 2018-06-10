@@ -1,6 +1,28 @@
 {
-  "name": "raven",
-  "version": "0.0.1",
+  "name": "@angular-community/raven",
+  "version": "1.0.0-beta.0",
+  "description": "Raven library for Angular",
+  "keywords": [
+    "raven",
+    "sentry",
+    "errors",
+    "debugging",
+    "exceptions",
+    "angular",
+    "angular6",
+    "ravenjs",
+    "raven-js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-community/raven"
+  },
+  "author": "Ivan Tugay <listepo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular-community/raven/issues"
+  },
+  "homepage": "https://github.com/angular-community/raven",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
